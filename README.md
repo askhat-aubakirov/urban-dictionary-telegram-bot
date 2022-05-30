@@ -30,3 +30,10 @@ This work is published from:
       content="KZ" about="https://www.linkedin.com/in/askhattio/">
   Kazakhstan</span>.
 </p>
+
+
+EXAMPLES OF USAGE:
+![image](https://user-images.githubusercontent.com/105732426/171035639-ec570b95-f71c-4904-b7a9-532267405ea6.png)
+![image](https://user-images.githubusercontent.com/105732426/171035682-30ab4d1f-b400-4cc2-9887-0c26d0e636bc.png)
+
+
