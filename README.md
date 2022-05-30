@@ -24,7 +24,7 @@ LinkedIn: https://www.linkedin.com/in/askhattio/
     href="https://www.linkedin.com/in/askhattio/">
     <span property="dct:title">Askhat Aubakirov</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">snp-count</span>.
+  <span property="dct:title">urban-dictionary-telegram-bot</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="KZ" about="https://www.linkedin.com/in/askhattio/">
