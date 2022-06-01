@@ -43,7 +43,7 @@ def help(update: Update, context: CallbackContext) -> None:
     update.message.reply_text("<b>Usage</b>: This bot is able to accept words and look for a definition of them on Urban Dictionary.\n\nIf you want to receive some info on developer, type /dev\nremember you can start all over using /start \nYou can have this help message shown again by using /help \n\nHave fun!", parse_mode=constants.PARSEMODE_HTML)
 
 def dev(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(emojize(":smiling_face_with_sunglasses:") + "Developed by Askhat Aubakirov, \ne-mail: askhat.aubakirov@yahoo.com \nMy LinkedIn: https://www.linkedin.com/in/askhattio/")
+    update.message.reply_text(emojize(":smiling_face_with_sunglasses:") + "Developed by Askhat Aubakirov, \ne-mail: askhat.aubakirov@yahoo.com \nMy LinkedIn: https://www.linkedin.com/in/askhattio/ \nSource code: https://github.com/askhat-aubakirov/urban-dictionary-telegram-bot")
 
 def get_word(update: Update, context: CallbackContext) -> None:
 
