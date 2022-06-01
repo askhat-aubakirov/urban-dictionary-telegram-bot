@@ -18,8 +18,7 @@ LinkedIn: https://www.linkedin.com/in/askhattio/
 #importing all of the necessary libraries
 from bs4 import BeautifulSoup
 import requests
-from telegram import Update
-import telegram
+from telegram import Update, constants
 from telegram.ext import (
     Updater,
     CommandHandler,
@@ -64,8 +63,8 @@ def get_word(update: Update, context: CallbackContext) -> None:
         examples = soup.find("div", {"class": "example italic mb-4"}).text
 
         #sending messages to user with the scraped definitions and examples
-        update.message.reply_text(f"<b>Here is the <i>definition</i> of {update.message.text}:</b> \n{definiton} \n" + emojize(random.choice(my_emojis)), parse_mode=telegram.constants.PARSEMODE_HTML)
-        update.message.reply_text(f"<b>Here are the <i>examples</i> of usage:</b> \n{examples} \n" + emojize(random.choice(my_emojis)), parse_mode=telegram.constants.PARSEMODE_HTML)
+        update.message.reply_text(f"<b>Here is the <i>definition</i> of {update.message.text}:</b> \n{definiton} \n" + emojize(random.choice(my_emojis)), parse_mode=constants.PARSEMODE_HTML)
+        update.message.reply_text(f"<b>Here are the <i>examples</i> of usage:</b> \n{examples} \n" + emojize(random.choice(my_emojis)), parse_mode=constants.PARSEMODE_HTML)
     
     except:
         #if the routine code doesn't work, bot will ask user for another word(s) 
