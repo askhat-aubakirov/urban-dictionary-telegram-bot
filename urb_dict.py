@@ -59,8 +59,8 @@ def get_word(update: Update, context: CallbackContext) -> None:
         soup = BeautifulSoup(page.text, "html.parser") 
 
         #looking for and retrieving the text data with definition and examples from the page
-        definiton = soup.find("div", {"class": "meaning mb-4"}).text
-        examples = soup.find("div", {"class": "example italic mb-4"}).text
+        definiton = soup.find("div", {"class": "break-words meaning mb-4"}).text
+        examples = soup.find("div", {"class": "break-words example italic mb-4"}).text
 
         #sending messages to user with the scraped definitions and examples
         update.message.reply_text(f"<b>Here is the <i>definition</i> of {update.message.text}:</b> \n{definiton} \n" + emojize(random.choice(my_emojis)), parse_mode=constants.PARSEMODE_HTML)
